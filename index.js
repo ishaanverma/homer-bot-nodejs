@@ -3,7 +3,7 @@
 // Imports dependencies and set up http server
 const
   request = require('request'),
-  vars = require('./vars.js');
+  vars = require('./vars.js'),
   express = require('express'),
   rssReader = require('feed-read'),
   bodyParser = require('body-parser'),

@@ -1,0 +1,5 @@
+let token = 'hello_token_success';
+let access_token = 'EAAdN3V4ZCq40BACyZAM03N1oys10KGkEZALJolTBAZBjxojpYCZC6bZBCPq8cgBAVCVQVOKnC6dv0JmvdE53t6gRgXxRr8xyJJ2nUqbWkXSXxOolcv8nHWj9INes4oMTYPZCcYoEBtWlZCIg4RxkhuepLMFyzJKFw8lJBr98DKhkxAZDZD'
+
+module.exports.token = token;
+module.exports.access_token = access_token;
