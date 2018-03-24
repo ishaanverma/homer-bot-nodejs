@@ -9,7 +9,7 @@ const
   bodyParser = require('body-parser'),
   app = express().use(bodyParser.json()); // creates express http server
 
-const PAGE_ACCESS_TOKEN = vars.access_token;
+const PAGE_ACCESS_TOKEN = process.env.PAGE_ACCESS_TOKEN;
 const googleNews = "https://news.google.com/news?output=rss";
 
 // Sets server port and logs message on success
@@ -56,7 +56,7 @@ app.post('/webhook', (req, res) => {
 app.get('/webhook', (req, res) => {
 
   // Your verify token. Should be a random string.
-  let VERIFY_TOKEN = vars.token;
+  let VERIFY_TOKEN = process.env.WEBHOOK_TOKEN;
 
   // Parse the query params
   let mode = req.query['hub.mode'];
