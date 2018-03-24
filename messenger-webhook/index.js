@@ -171,16 +171,16 @@ function callSendAPI(sender_psid, response) {
     });
 }
 
-function getArticles(callback)   {
-    rssReader(googleNews, funtion(err, articles)    {
-        if (err)    {
-            callback(err);
-        } else {
-            if (articles.length > 0)    {
-                callback(null, articles)
-            } else {
-                callback("No articles received")
-            }
-        }
-    })
-}
+// function getArticles(callback)   {
+//     rssReader(googleNews, funtion(err, articles)    {
+//         if (err)    {
+//             callback(err);
+//         } else {
+//             if (articles.length > 0)    {
+//                 callback(null, articles)
+//             } else {
+//                 callback("No articles received")
+//             }
+//         }
+//     })
+// }
